@@ -12,6 +12,6 @@ test('renders learn react link', () => {
 test('hello world (expected to fail)', () => {
   render(<App />)
   const textElement = screen.getByText(/Hello, World!/i)
-  expect(linkElement).toBeInTheDocument()
+  expect(textElement).toBeInTheDocument()
 })
 /* eslint-enable no-undef */
