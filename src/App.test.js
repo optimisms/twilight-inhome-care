@@ -8,4 +8,10 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i)
   expect(linkElement).toBeInTheDocument()
 })
+
+test('hello world (expected to fail)', () => {
+  render(<App />)
+  const textElement = screen.getByText(/Hello, World!/i)
+  expect(linkElement).toBeInTheDocument()
+})
 /* eslint-enable no-undef */
